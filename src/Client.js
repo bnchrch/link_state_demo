@@ -17,7 +17,4 @@ const Client = new ApolloClient({
   cache: cache,
 });
 
-// Ensure default states values are rewritten when resetting the store
-// Client.onResetStore(stateLink.writeDefaults);
-
 export default Client;
