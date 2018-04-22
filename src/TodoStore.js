@@ -38,14 +38,14 @@ const addTodoQuery = gql`
 
 const addTodo = (_obj, {item}, {cache}) => {
   const query = todoQuery;
-  // Get current filter item from the GraphQl cache
+  // Read the todo's from the cache
   const {currentTodos} = cache.readQuery({query});
 
-  // Add or remove the current item from the cached data
-  const selected = currentTodos.concat(item);
+  // Add the item to the current todos
+  const updatedTodos = currentTodos.concat(item);
 
-  // Update the cache
-  cache.writeQuery({query, data: {currentTodos: selected}});
+  // Update the cached todos
+  cache.writeQuery({query, data: {currentTodos: updatedTodos}});
 
   return null;
 };
