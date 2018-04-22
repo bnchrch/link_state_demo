@@ -1,0 +1,24 @@
+{
+  "name": "link_state_demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "apollo-boost": "^0.1.4",
+    "apollo-client-preset": "^1.0.8",
+    "apollo-link-state": "^0.4.1",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.8.0",
+    "lodash": "^4.17.5",
+    "react": "^16.3.0",
+    "react-apollo": "^2.1.3",
+    "react-dom": "^16.3.0",
+    "react-scripts": "1.1.1",
+    "recompose": "^0.26.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
