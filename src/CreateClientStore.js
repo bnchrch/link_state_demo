@@ -1,5 +1,6 @@
 import {store as todoStore} from './TodoStore';
 import {store as noteStore} from './NoteStore';
+import {store as objectStore} from './ObjectStore';
 import {withClientState} from 'apollo-link-state';
 
 import flow from 'lodash/fp/flow';
@@ -38,6 +39,7 @@ const mergeGet = (attributeName) => flow(
 const STORES = [
   todoStore,
   noteStore,
+  objectStore,
 ];
 
 /**

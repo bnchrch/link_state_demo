@@ -2,6 +2,7 @@ import React from 'react';
 
 import TodoList from './TodoList'
 import Notes from './Notes'
+import User from './User'
 
 import logo from './logo.svg';
 import './App.css';
@@ -17,6 +18,7 @@ const App = () => (
     <Header/>
     <TodoList/>
     <Notes/>
+    <User/>
   </div>
 );
 
